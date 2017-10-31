@@ -81,11 +81,11 @@ def selectBreed():
     print("4. Greyhound")
     print("5. Dire Wolf")
     breedSelect = int(raw_input("Enter the number: "))
-    if breedSelect == 1 or 2 or 3 or 4 or 5:
+    if breedSelect == 1 or breedSelect == 2 or breedSelect == 3 or breedSelect == 4 or breedSelect == 5:
         speed = 1.6 + (breedSelect * 0.2)
         runGame()
     else:
         print("Please select a choice 1 though 5.")
-    selectBreed
+    selectBreed()
     
 selectBreed()
